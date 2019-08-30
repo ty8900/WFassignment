@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:text="허동석, 그는 누구인가?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="30sp"
+            android:id="@+id/textView"
+            android:layout_marginTop="60dp"
+            tools:layout_editor_absoluteY="347dp"/>
+    <ImageView
+            android:layout_width="272dp"
+            android:layout_height="141dp"
+            app:srcCompat="@drawable/me"
+            android:id="@+id/imageView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:layout_marginTop="10sp"
+    />
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginBottom="100dp"
+            tools:layout_editor_absoluteY="40dp" android:gravity="bottom">
+        <TextView
+                android:text="첫 번째, 내년이면 화석으로 변할 18학번."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#FF0000"
+                android:id="@+id/textView2"/>
+        <TextView
+                android:text="두 번째, 컴퓨터 망가지면 본체 명치를 뚫어버리는 컴공,"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20sp"
+                android:id="@+id/textView3"/>
+        <TextView
+                android:text="세 번째,도대체 어떻게 들어왔는지 모를 서울대학교,"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:layout_marginTop="20sp"
+                android:id="@+id/textView4"/>
+        <Button
+                android:text="더 많은 정보를 알고 싶다면? 클릭"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:id="@+id/button"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
